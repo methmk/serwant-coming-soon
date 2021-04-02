@@ -1,8 +1,8 @@
 
 @font-face {
 font-family: "loew-regular";
-src: url('fonts/loew-regular-webfont.woff') format('woff');
-src: url('fonts/loew-regular-webfont.woff2') format('woff2');
+src: url('css/fonts/loew-regular-webfont.woff') format('woff');
+src: url('css/fonts/loew-regular-webfont.woff2') format('woff2');
 }
 
 mark {
