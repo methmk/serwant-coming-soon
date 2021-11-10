@@ -67,7 +67,7 @@
 
 @font-face {
   font-family: 'Loew-ExtraBold';
-  src: url("/fonts/Loew-ExtraBold.otf");
+  src: url("../fonts/Loew-ExtraBold.otf");
   src: local("Loew-ExtraBold");
 }
 
