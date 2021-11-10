@@ -59,66 +59,35 @@
   background: rgba(13, 57, 112, 0.9);
 }
 
-
 @font-face {
-  font-family: 'Loew-Light';
-  src: url('../fonts/Loew-Light.woff2') format('woff2'),
-      url('../fonts/Loew-Light.woff') format('woff'),
-      url('../fonts/Loew-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'Loew-Bold';
+  src: url("../fonts/Loew-Bold.otf");
+  src: local("Loew-Bold");
 }
 
 @font-face {
-  font-family: 'Loew-Regular';
-  src: url('../fonts/Loew-Regular.woff2') format('woff2'),
-      url('../fonts/Loew-Regular.woff') format('woff'),
-      url('../fonts/Loew-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Loew-Black';
-  src: url('../fonts/Loew-Black.woff2') format('woff2'),
-      url('../fonts/Loew-Black.woff') format('woff'),
-      url('../fonts/Loew-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'Loew-ExtraBold';
+  src: url("/fonts/Loew-ExtraBold.otf");
+  src: local("Loew-ExtraBold");
 }
 
 @font-face {
   font-family: 'Loew-Medium';
-  src: url('../fonts/Loew-Medium.woff2') format('woff2'),
-      url('../fonts/Loew-Medium.woff') format('woff'),
-      url('../fonts/Loew-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/Loew-Medium.otf");
+  src: local("Loew-Medium");
 }
 
 @font-face {
-  font-family: 'Loew-Bold';
-  src: url('../fonts/Loew-Bold.woff2') format('woff2'),
-      url('../fonts/Loew-Bold.woff') format('woff'),
-      url('../fonts/Loew-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Loew-ExtraBold';
-  src: url('../fonts/Loew-ExtraBold.woff2') format('woff2'),
-      url('../fonts/Loew-ExtraBold.woff') format('woff'),
-      url('../fonts/Loew-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'Loew-Regular';
+  src: url("/fonts/Loew-Regular.otf");
+  src: local("Loew-Regular");
 }
 
+@font-face {
+  font-family: 'Loew-Light';
+  src: url("/fonts/Loew-Light.otf");
+  src: local("Loew-Light");
+}
 
 h2 {
   font-size: 2vw;
@@ -384,8 +353,9 @@ nav ul .is-active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
+  width: 21vw;
   margin-top: 5vh;
+  position: relative;
 }
 
 .features-container .card .card-head {
@@ -403,7 +373,7 @@ nav ul .is-active {
 
 .features-container .card .card-head .octave-meter {
   width: 18vw !important;
-  padding-left: 1vw;
+  padding-left: 2vw;
 }
 
 .features-container .card .card-description {
@@ -416,7 +386,7 @@ nav ul .is-active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 15vw 2vw 2vw 2vw;
+  margin: 15vw 2vw 0vw 2vw;
 }
 
 .features-container .card .card-description h4 {
@@ -436,16 +406,38 @@ nav ul .is-active {
   line-height: 3vh;
 }
 
+.features-container .card .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2vw;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .features-container .card .card-bottom p {
   -webkit-filter: blur(1px);
           filter: blur(1px);
   display: block;
   text-align: center;
+  margin: 0;
 }
 
 .features-container .card .card-bottom p img {
   padding-right: 5px;
   width: 0.6vw;
+}
+
+.features-container .visited {
+  text-decoration: none;
+  color: white;
 }
 
 .features-container .card:hover {
@@ -481,13 +473,15 @@ nav ul .is-active {
 
 .features-container .card:hover .card-head .octave-meter {
   width: 18vw !important;
-  padding-left: 1vw;
+  padding-left: 2vw;
 }
 
 .features-container .card:hover .card-bottom {
+  margin-top: 2vw;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  height: 20px;
   background: radial-gradient(280.83% 161.51% at -7.58% 0%, rgba(137, 211, 96, 0.75) 6.82%, rgba(137, 211, 96, 0.75) 100%);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);

@@ -312,8 +312,9 @@ nav {
 		height: 70vh;
 		display: flex;
 		flex-direction: column;
-		width: 20vw;
+		width: 21vw;
 		margin-top: 5vh;
+		position: relative;
 		.card-head {
 			position: relative;
 			.product-img {
@@ -325,14 +326,14 @@ nav {
 			}
 			.octave-meter {
 				width: 18vw !important;
-				padding-left: 1vw;
+				padding-left: 2vw;
 			}
 		}
 		.card-description {
 			filter: blur(1px);
 			display: flex;
 			flex-direction: column;
-			margin: 15vw 2vw 2vw 2vw;
+			margin: 15vw 2vw 0vw 2vw;
 			h4 {
 				margin-top: 0.5vw;
 				font-size: 2.9vh;
@@ -349,16 +350,27 @@ nav {
 			}
 		}
 		.card-bottom {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top:2vw;
+			flex-grow: 1;
 			p {
 				filter: blur(1px);
 				display: block;
 				text-align: center;
+				margin: 0;
 				img {
 					padding-right: 5px;
 					width: 0.6vw;
 				}
 			}
 		}
+	}
+	.visited {
+
+			text-decoration: none;
+			color:white;
 	}
 	.card:hover {
 		opacity: 1;
@@ -382,11 +394,13 @@ nav {
 			}
 			.octave-meter {
 				width: 18vw !important;
-				padding-left: 1vw;
+				padding-left: 2vw;
 			}
 		}
 		.card-bottom {
+			margin-top:2vw;
 			flex-grow: 1;
+			height: 20px;
 			background: radial-gradient(280.83% 161.51% at -7.58% 0%, rgba(137, 211, 96, 0.75) 6.82%, rgba(137, 211, 96, 0.75) 100%);
 			backdrop-filter: blur(10px);
 			border-radius: 0px 0px 28px 28px;
