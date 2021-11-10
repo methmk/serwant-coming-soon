@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Serwant Ukraine</title>
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body data-barba="wrapper">
+      <div class="hero">
+         <div id="youtubeEmbed" class="hero_video" data-video-id="YlwMw4a7r6c"></div>
+      </div>
+      <div class="header-content">
+         <div class="header">
+            <div class="container">
+               <div class="main">
+                  <a href="#"><img class="logo" src="/img/logo.png" alt=""></a>
+                  <ul class="lang">
+                     <li>EN</li>
+                     <li> <a href="/ru/index.html">RU</a></li>
+                  </ul>
+                  <p class="header-distributor">Офіційний дистриб’ютор <img class="aradlogo"src="/img/aradwhite.svg" alt=""> в Україні</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="partners transition" data-barba="container" data-barba-namespace="partners">
+         <nav class="navigation">
+        
+            <ul>
+                <li class="navigation__link "><a href="http://serwant.com.ua/index.html">Компанія</a></li>
+                <li class="navigation__link "><a href="http://serwant.com.ua/devices.html">Прилади</a></li>
+                <li class="navigation__link "> <a href="http://serwant.com.ua/platform.html">Платформа</a></li>
+                <li class="navigation__link is-active"><a href="http://serwant.com.ua/partners.html">Партнери</a></li>
+                <li class="navigation__link "><a href="http://serwant.com.ua/contacts.html">Контакти</a></li>
+            </ul>
+      
+    </nav>
+      <div class="container">
+         <div class="partners-content">
+            <h4>РОБИМО ВОДУ РОЗУМНОЮ РАЗОМ</h4>
+            <h3>Наші партнери</h3>
+            <p>Світовий лідер в сфері рішень та послуг по вимірюванню води, <span class="green">Arad Group</span> спеціалізується на проектуванні, розробці та виробництві високоякісних лічильників, систем автоматичного зчитування показів лічильників (AMR) та вдосконаленої інфраструктури обліку (AMI), а також провідних систем та технологій MDM.</p>
+            <div class="statistic">
+               <ul>
+                  <li class="green">в <span class="huge">60</span> країнах</li>
+                  <li class="green"><span class="huge">80</span>років на ринку</li>
+                  <li class="green">Під’єднаних приладів<br><span class="huge closer">10,000,000 </span></li>
+               </ul>
+            </div>
+         </div>
+         <div class="part-logo">
+            <ul>
+               <li>
+                  <img src="/img/aradtech.svg" alt=""><br> 
+                
+               </li>
+               <li>
+                  <img src="/img/masterneter.svg" alt=""><br>
+                
+               </li>
+               <li>
+                  <img src="/img/cicasa.svg" alt=""><br>
+               </li> 
+               <li>
+                  <img class="img-list" src="/img/contazara.png" alt=""><br>
+                
+               </li>
+               <li>
+                  <img src="/img/watertech.svg" alt=""><br>
+                 
+               </li>
+               <li>
+                  <img src="/img/aradchina.svg" alt=""><br>
+                  
+               </li>
+            </ul>
+         </div>
+         <div class="crop">
+            <object type="image/svg+xml" data="http://serwant.com.ua/img/world.svg"></object>
+         </div>
+      </div>
+      <script>
+         // Get element active
+         var youtubeEmbedElement = document.getElementById("youtubeEmbed");
+         
+         // Add YouTube API script
+         var tag = document.createElement("script");
+         tag.src = "https://www.youtube.com/iframe_api";
+         var firstScriptTag = document.getElementsByTagName("script")[0];
+         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+         
+         var player;
+         var videoId = youtubeEmbedElement.dataset.videoId;
+         var startSeconds = 1;
+         var endSeconds = 110;
+         
+         onYouTubeIframeAPIReady = function () {
+         player = new YT.Player("youtubeEmbed", {
+         videoId: videoId, // YouTube Video ID
+         playerVars: {
+           autoplay: 1, // Auto-play the video on load
+           autohide: 1, // Hide video controls when playing
+           disablekb: 1,
+           controls: 0, // Hide pause/play buttons in player
+           showinfo: 0, // Hide the video title
+           modestbranding: 1, // Hide the Youtube Logo
+           loop: 1, // Run the video in a loop
+           fs: 0, // Hide the full screen button
+           rel: 0,
+           enablejsapi: 1,
+           start: startSeconds,
+           end: endSeconds
+         },
+         events: {
+           onReady: function (e) {
+             e.target.mute();
+             e.target.playVideo();
+           },
+           onStateChange: function (e) {
+             if (e.data === YT.PlayerState.PLAYING) {
+               document.getElementById("youtubeEmbed").classList.add("loaded");
+             }
+         
+             if (e.data === YT.PlayerState.ENDED) {
+               // Loop from starting point
+               player.seekTo(startSeconds);
+             }
+           }
+         }
+         });
+         };
+         
+      </script>
+   </body>
+</html> 

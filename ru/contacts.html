@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serwant Ukraine</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-barba="wrapper">
+    <div class="hero">
+        <div id="youtubeEmbed" class="hero_video" data-video-id="YlwMw4a7r6c"></div>
+    </div>
+<div class="header-content">
+  <div class="container">
+   
+    <div class="header">
+        
+            <div class="main">
+            <a href="#"><img class="logo" src="/img/logo.png" alt=""></a>
+            <ul class="lang">
+                <li>EN</li>
+                <li> <a href="/index.html">UA</a></li>
+            </ul>
+            <p class="header-distributor">Официальный дистрибьютор <img class="aradlogo"src="/img/aradwhite.svg" alt=""> в Украине</p>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="wrapper transition" data-barba="container" data-barba-namespace="home">
+  
+        <nav class="navigation">
+        
+          <ul>
+              <li class="navigation__link "><a href="http://serwant.com.ua/ru/index.html">Компания</a></li>
+              <li class="navigation__link "><a href="http://serwant.com.ua/ru/devices.html">Приборы</a></li>
+              <li class="navigation__link "> <a href="http://serwant.com.ua/ru/platform.html">Платформа</a></li>
+              <li class="navigation__link "><a href="http://serwant.com.ua/ru/partners.html">Партнеры</a></li>
+              <li class="navigation__link is-active"><a href="http://serwant.com.ua/ru/contacts.html">Контакты</a></li>
+          </ul>
+    
+  </nav>
+    <div class="container">
+
+    <div class="main-devices">
+      <h4>ТОВ «СЕРВАНТ УКРАИНА»</h4>
+      <h3>Обратная связь</h3>
+    <div class="contact-info">
+      <ul>
+        <li> <span class="green">Телефон</span> <br> <p>+38 068 489 37 04</p></li>
+        <li> <span class="green">Электронная почта</span> <br> <p>info@serwant.com.ua</p></li>
+        <li> <span class="green">Юридический адрес</span> <br> <p>03039, город Киев, вул.Фрометивська<br> дом 2, корпус 5</p></li>
+        <li> <span class="green">ЄРДПОУ</span> <br> <p>44019665</p></li>
+      </ul>
+    </div>
+</div>
+ 
+
+
+<script>
+    // Get element active
+var youtubeEmbedElement = document.getElementById("youtubeEmbed");
+
+// Add YouTube API script
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+var videoId = youtubeEmbedElement.dataset.videoId;
+var startSeconds = 1;
+var endSeconds = 110;
+
+onYouTubeIframeAPIReady = function () {
+  player = new YT.Player("youtubeEmbed", {
+    videoId: videoId, // YouTube Video ID
+    playerVars: {
+      autoplay: 1, // Auto-play the video on load
+      autohide: 1, // Hide video controls when playing
+      disablekb: 1,
+      controls: 0, // Hide pause/play buttons in player
+      showinfo: 0, // Hide the video title
+      modestbranding: 1, // Hide the Youtube Logo
+      loop: 1, // Run the video in a loop
+      fs: 0, // Hide the full screen button
+      rel: 0,
+      enablejsapi: 1,
+      start: startSeconds,
+      end: endSeconds
+    },
+    events: {
+      onReady: function (e) {
+        e.target.mute();
+        e.target.playVideo();
+      },
+      onStateChange: function (e) {
+        if (e.data === YT.PlayerState.PLAYING) {
+          document.getElementById("youtubeEmbed").classList.add("loaded");
+        }
+
+        if (e.data === YT.PlayerState.ENDED) {
+          // Loop from starting point
+          player.seekTo(startSeconds);
+        }
+      }
+    }
+  });
+};
+
+</script>
+
+</body>
+</html>
+

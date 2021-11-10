@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serwant Ukraine</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-barba="wrapper">
+    <div class="hero">
+        <div id="youtubeEmbed" class="hero_video" data-video-id="YlwMw4a7r6c"></div>
+    </div>
+<div class="header-content">
+    <div class="header">
+        <div class="container">
+            <div class="main">
+            <a href="#"><img class="logo" src="/img/logo.png" alt=""></a>
+            <ul class="lang">
+                <li>EN</li>
+                <li> <a href="/index.html">UA</a></li>
+            </ul>
+            <p class="header-distributor">Официальный дистрибьютор <img class="aradlogo"src="/img/aradwhite.svg" alt=""> в Украине</p>
+        </div>
+        </div>
+    </div>   
+</div> 
+
+<div class="platform"  data-barba="container" data-barba-namespace="platform">
+  <div class="transition">
+  <nav class="navigation">
+    <ul>
+      <li class="navigation__link "><a href="http://serwant.com.ua/ru/index.html">Компания</a></li>
+      <li class="navigation__link  "><a href="http://serwant.com.ua/ru/devices.html">Приборы</a></li>
+      <li class="navigation__link is-active"> <a href="http://serwant.com.ua/ru/platform.html">Платформа</a></li>
+      <li class="navigation__link "><a href="http://serwant.com.ua/ru/partners.html">Партнеры</a></li>
+      <li class="navigation__link "><a href="http://serwant.com.ua/ru/contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+        <div class="glass"></div>
+        
+        <div class="container">
+                <div class="platform-content">
+                  <div class="serwant-ipad cropped"><img src="/img/ipadserwant.png" alt=""></div>
+                    <div class="platform-text">
+                      <div class="anim-plat-text">
+                    <h4>СОВРЕМЕННЫЙ ИНСТРУМЕНТ</h4>
+                    <h2>Платформа для сбора данных <br>с приборов учета и диагностики водопроводной сети</h2>
+                  </div>
+                  <div class="list">
+                    <ul class="anim-platlist">
+                      <li><h4><img src="/img/one.svg" alt="">Единый сервис</h4><p>Управление и контроль за приборами, анализ и визуализация состояния водопровода, экспорт биллинг данных о потребления, репорты и оповещения об аварийных ситуциях - Все в одном месте.</p></li>
+                      <li><h4><img src="/img/multiple.svg" alt="">Любые приборы</h4><p>Наш сервис получачет данные с приборов учета и диагностики вне зависимости от производителя прибора и модуля коммуникации Lora, wBus, GSM и nb-iot.</p></li>
+                      <li><h4><img src="/img/shield1.svg" alt="">Безопасность данных</h4><p>Мы заботимся о безопасности данных предприятий  и их клиентов. Вся чувствительная информация находится на серверах наших клиентов.</p></li>
+
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+       </div>
+
+
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+       <!-- Barba Core -->
+       <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+     
+       <!-- GSAP for animation -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+     
+     <script src="index.js"></script>
+<script>
+    // Get element active
+var youtubeEmbedElement = document.getElementById("youtubeEmbed");
+
+// Add YouTube API script
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+var videoId = youtubeEmbedElement.dataset.videoId;
+var startSeconds = 1;
+var endSeconds = 110;
+
+onYouTubeIframeAPIReady = function () {
+  player = new YT.Player("youtubeEmbed", {
+    videoId: videoId, // YouTube Video ID
+    playerVars: {
+      autoplay: 1, // Auto-play the video on load
+      autohide: 1, // Hide video controls when playing
+      disablekb: 1,
+      controls: 0, // Hide pause/play buttons in player
+      showinfo: 0, // Hide the video title
+      modestbranding: 1, // Hide the Youtube Logo
+      loop: 1, // Run the video in a loop
+      fs: 0, // Hide the full screen button
+      rel: 0,
+      enablejsapi: 1,
+      start: startSeconds,
+      end: endSeconds
+    },
+    events: {
+      onReady: function (e) {
+        e.target.mute();
+        e.target.playVideo();
+      },
+      onStateChange: function (e) {
+        if (e.data === YT.PlayerState.PLAYING) {
+          document.getElementById("youtubeEmbed").classList.add("loaded");
+        }
+
+        if (e.data === YT.PlayerState.ENDED) {
+          // Loop from starting point
+          player.seekTo(startSeconds);
+        }
+      }
+    }
+  });
+};
+
+</script>
+
+</body>
+</html>
+
