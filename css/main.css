@@ -59,35 +59,66 @@
   background: rgba(13, 57, 112, 0.9);
 }
 
-@font-face {
-  font-family: 'Loew-Bold';
-  src: url("../fonts/Loew-Bold.otf");
-  src: local("Loew-Bold");
-}
 
 @font-face {
-  font-family: 'Loew-ExtraBold';
-  src: url("/fonts/Loew-ExtraBold.otf");
-  src: local("Loew-ExtraBold");
-}
-
-@font-face {
-  font-family: 'Loew-Medium';
-  src: url("/fonts/Loew-Medium.otf");
-  src: local("Loew-Medium");
+  font-family: 'Loew-Light';
+  src: url('../fonts/Loew-Light.woff2') format('woff2'),
+      url('../fonts/Loew-Light.woff') format('woff'),
+      url('../fonts/Loew-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Loew-Regular';
-  src: url("/fonts/Loew-Regular.otf");
-  src: local("Loew-Regular");
+  src: url('../fonts/Loew-Regular.woff2') format('woff2'),
+      url('../fonts/Loew-Regular.woff') format('woff'),
+      url('../fonts/Loew-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Loew-Light';
-  src: url("/fonts/Loew-Light.otf");
-  src: local("Loew-Light");
+  font-family: 'Loew-Black';
+  src: url('../fonts/Loew-Black.woff2') format('woff2'),
+      url('../fonts/Loew-Black.woff') format('woff'),
+      url('../fonts/Loew-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Loew-Medium';
+  src: url('../fonts/Loew-Medium.woff2') format('woff2'),
+      url('../fonts/Loew-Medium.woff') format('woff'),
+      url('../fonts/Loew-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Loew-Bold';
+  src: url('../fonts/Loew-Bold.woff2') format('woff2'),
+      url('../fonts/Loew-Bold.woff') format('woff'),
+      url('../fonts/Loew-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loew-ExtraBold';
+  src: url('../fonts/Loew-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Loew-ExtraBold.woff') format('woff'),
+      url('../fonts/Loew-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 h2 {
   font-size: 2vw;
