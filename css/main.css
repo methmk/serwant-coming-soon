@@ -1355,5 +1355,91 @@ nav ul .is-active {
     font-family: "Loew-ExtraBold", sans-serif;
     font-weight: bold;
   }
+  .platform .glass {
+    display: none;
+    top: 0;
+    left: 4vh;
+    height: 200%;
+    width: 90vw;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(159, 159, 159, 0.251)), to(rgba(233, 233, 233, 0.1)));
+    background: linear-gradient(to bottom right, rgba(159, 159, 159, 0.251), rgba(233, 233, 233, 0.1));
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+  .platform .cropped {
+    width: 90vw;
+    /* width of container */
+    height: 85vh;
+    /* height of container */
+    overflow: hidden;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .platform-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .platform-content .serwant-ipad {
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: -6vh;
+  }
+  .platform-content .serwant-ipad img {
+    width: 100vw;
+  }
+  .platform-content .platform-text {
+    margin-left: 1vh;
+    width: 75vw;
+  }
+  .platform-content .platform-text h4 {
+    font-size: 2.5vh;
+    margin-bottom: 0.5vw;
+    line-height: 4vh;
+  }
+  .platform-content .platform-text h2 {
+    font-size: 5vh;
+    line-height: 5vh;
+    margin-top: 4vh;
+  }
+  .platform-content .platform-text ul {
+    margin-top: 50vh;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    width: 75vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .platform-content .platform-text ul li {
+    width: 70vw;
+    display: block;
+    margin-top: 1vh;
+    margin-left: 0 !important;
+  }
+  .platform-content .platform-text ul li p {
+    font-size: 2vh;
+    line-height: 3vh;
+  }
+  .platform-content .platform-text ul li img {
+    width: 5vw;
+  }
 }
 /*# sourceMappingURL=main.css.map */
