@@ -1393,7 +1393,7 @@ nav ul .is-active {
   }
   .platform-content .serwant-ipad {
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 40vh;
     margin-left: -6vh;
   }
   .platform-content .serwant-ipad img {
@@ -1409,12 +1409,12 @@ nav ul .is-active {
     line-height: 4vh;
   }
   .platform-content .platform-text h2 {
-    font-size: 5vh;
+    font-size: 4vh;
     line-height: 5vh;
     margin-top: 4vh;
   }
   .platform-content .platform-text ul {
-    margin-top: 50vh;
+    margin-top: 30vh;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1439,6 +1439,7 @@ nav ul .is-active {
     line-height: 3vh;
   }
   .platform-content .platform-text ul li img {
+    padding-right: 1.5vh;
     width: 5vw;
   }
 }

@@ -686,6 +686,10 @@ nav {
 
 @media screen and (max-width: 700px) {
 
+
+	
+
+
 	nav {
 		position: absolute;
 		top: 2vh;
@@ -1216,7 +1220,7 @@ nav {
 	
 			.serwant-ipad{
 				position: absolute;
-				margin-top:30vh;
+				margin-top:40vh;
 				margin-left:-6vh;
 				
 				img{
@@ -1233,12 +1237,12 @@ nav {
 					line-height: 4vh;
 			}
 			h2 {
-				font-size:5vh;
+				font-size:4vh;
 				line-height: 5vh;
 				margin-top: 4vh;
 			}
 			ul {
-				margin-top: 50vh;
+				margin-top: 30vh;
 				padding: 0;
 				display: flex;
 				list-style: none;
@@ -1255,7 +1259,7 @@ nav {
 					line-height: 3vh;
 					}
 					img {
-						
+						padding-right: 1.5vh;
 						width: 5vw;
 					}
 				}
