@@ -5,6 +5,57 @@
 	--darkgrey: #3F3F3F;
 }
 
+
+@font-face {
+	font-family: 'Loew-Bold';
+	src: url('/fonts/Loew-Bold.eot'); /* IE9 Compat Modes */
+	src: url('/fonts/Loew-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/fonts/Loew-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('/fonts/Loew-Bold.woff2') format('woff'), /* Pretty Modern Browsers */
+		 url('/fonts/Loew-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('/fonts/Loew-Bold.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Loew-ExtraBold';
+	src: url('/fonts/Loew-ExtraBold.eot'); /* IE9 Compat Modes */
+	src: url('/fonts/Loew-ExtraBold.eot') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/fonts/Loew-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('/fonts/Loew-ExtraBold.woff2') format('woff'), /* Pretty Modern Browsers */
+		 url('/fonts/Loew-ExrtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('/fonts/Loew-ExtraBold.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Loew-Medium';
+	src: url('/fonts/Loew-Medium.eot'); /* IE9 Compat Modes */
+	src: url('/fonts/Loew-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/fonts/Loew-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('/fonts/Loew-Medium.woff2') format('woff'), /* Pretty Modern Browsers */
+		 url('/fonts/Loew-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('/fonts/Loew-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Loew-Regular';
+	src: url('/fonts/Loew-Regular.eot'); /* IE9 Compat Modes */
+	src: url('/fonts/Loew-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/fonts/Loew-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('/fonts/Loew-Regular.woff2') format('woff'), /* Pretty Modern Browsers */
+		 url('/fonts/Loew-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('/fonts/Loew-Regular.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Loew-Light';
+	src: url('/fonts/Loew-Light.eot'); /* IE9 Compat Modes */
+	src: url('/fonts/Loew-Light.eot') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/fonts/Loew-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('/fonts/Loew-Light.woff2') format('woff'), /* Pretty Modern Browsers */
+		 url('/fonts/Loew-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('/fonts/Loew-Light.svg') format('svg'); /* Legacy iOS */
+}
+
 .hero,
 .hero_content {
 	position: absolute;
@@ -66,29 +117,7 @@
 	src: local('Loew-Bold')
 }
 
-@font-face {
-	font-family: 'Loew-ExtraBold';
-	src: url('/fonts/Loew-ExtraBold.otf');
-	src: local('Loew-ExtraBold')
-}
 
-@font-face {
-	font-family: 'Loew-Medium';
-	src: url('/fonts/Loew-Medium.otf');
-	src: local('Loew-Medium')
-}
-
-@font-face {
-	font-family: 'Loew-Regular';
-	src: url('/fonts/Loew-Regular.otf');
-	src: local('Loew-Regular')
-}
-
-@font-face {
-	font-family: 'Loew-Light';
-	src: url('/fonts/Loew-Light.otf');
-	src: local('Loew-Light')
-}
 
 h2 {
 	font-size: 2vw;
