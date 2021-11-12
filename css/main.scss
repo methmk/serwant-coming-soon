@@ -1315,5 +1315,179 @@ nav {
 	}
 
 
+	.partners {
+    
+		.partners-content {
+			margin-top: 1vh;
+			display: flex;
+			flex-direction: column;
+			width: 80vw;
+			h4 {
+				font-size: 1.5vh;
+				padding-right: 1vh;
+			}
+			h3 {
+				font-size:4vh;
+				line-height: 5vh;
+				margin-top: 4vh;
+			}
+			p {
+				margin-top: 3vh;
+				font-size: 1.5vh;
+				line-height: 2vh;
+				.green {
+					color: #89D360;
+				
+				}
+			}
+	
+			.statistic {
+				margin-top: 0vh;
+			
+			ul {
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+				flex-wrap: wrap;
+				margin-left: 0;
+				padding-left: 0;
+				margin-top: 1vh;
+				width: 80vw;
+				.green {
+					color: #89D360;
+					font-family: "Loew-ExtraBold", sans-serif;
+				}
+				.huge {
+					color: white;
+					font-size: 6vh;
+					font-family: "Loew-ExtraBold", sans-serif;
+				}
+				li {
+					margin-top: 10vh;
+					width: 70%;
+					line-height: 2vh;
+					font-size: 2.2vh;
+				}
+				li:nth-child(1){
+					margin-top: 2vh;
+					margin-left:0;
 
+				}
+				li:nth-child(2){
+					margin-top: 7vh;
+					margin-left:0;
+
+				}
+				li:nth-child(3){
+					line-height: 4vh;
+					margin-top: 4vh;
+				}
+			}
+		}
+		.part-logo {
+			margin-top: 5vh;
+			display: flex;
+			width: 94vw;
+			justify-content: flex-end;
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin: 0;
+				padding-left: 0;
+				justify-content: space-between;
+				align-items: center;
+				.img-list {
+					width: 3vw;
+				}
+				li {
+					width: 27vw;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					font-size: 1.5vh;
+					margin-top: 0;
+					padding-left:0;
+					img {
+						width: 20vw;
+					}
+					p { 
+						align-items: center;
+						font-size: 0.5vw;
+						margin-top: 0;
+						color:#89D360;
+					}
+				}
+				li:nth-child(4) {
+					margin-bottom: -0.2vw !important;
+					img{
+						width: 10vw;
+						padding-left: 10svw;
+					}
+				}
+				li:nth-child(5) {
+					margin-top: -1vh !important;
+				}
+				li:nth-child(6) {
+					margin-bottom: 1vh !important;
+				}
+			}
+		}
+	}
+		
+		.crop {
+			object {
+				width: 80vw;
+				height: 75vh;
+				position: absolute;
+				top: 28%;
+				right: 1%;
+				z-index: -11;
+				margin: -1vw +5vw 0 0;
+			}
+		}
+	}
+
+	.contacts {
+		display: block;
+		h4 {
+			margin-top: 0;
+			font-size: 1.5vh;
+			padding-right: 1vh;
+		}
+		h3 {
+			font-size:4vh;
+			line-height: 5vh;
+			margin-top: 2vh;
+		}
+	}
+	.contact-info {
+		display: block;
+	
+		ul {
+			list-style: none;
+			margin-top:-2vh;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+	
+				li{
+					padding-top: 1vh;
+					.green {
+						color: #89D360;
+						font-size: 2vh;
+						
+	
+					}
+	
+					p{
+						margin-top: 1vh;
+						font-size: 3vh;
+						line-height: 5vh;
+						font-family: 'Loew-Light', sans-serif;
+					}
+				}
+		}
+	}
 }
