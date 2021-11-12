@@ -143,6 +143,7 @@ input {
   width: 178px;
   height: 40px;
   padding: 0 !important;
+  margin-left: -1vh;
 }
 
 a:visited {
@@ -269,7 +270,7 @@ nav ul .is-active {
   display: -ms-flexbox;
   display: flex;
   text-align: end;
-  margin-top: 15vh;
+  margin-top: 14vh;
   display: block;
   width: 45vw;
 }
@@ -286,6 +287,7 @@ nav ul .is-active {
 }
 
 .tech-list {
+  margin-top: 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,14 +589,13 @@ nav ul .is-active {
 .platform .glass {
   top: 0;
   left: 38%;
-  height: 99vh;
+  height: 100%;
   width: 45vw;
   position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(159, 159, 159, 0.251)), to(rgba(233, 233, 233, 0.1)));
   background: linear-gradient(to bottom right, rgba(159, 159, 159, 0.251), rgba(233, 233, 233, 0.1));
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
@@ -620,11 +621,12 @@ nav ul .is-active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 2vw;
 }
 
 .platform-content .serwant-ipad {
-  margin-top: -5%;
-  margin-left: -20%;
+  margin-top: -5vw;
+  margin-left: -17%;
 }
 
 .platform-content .serwant-ipad img {
@@ -632,6 +634,7 @@ nav ul .is-active {
 }
 
 .platform-content .platform-text {
+  margin-top: -3vh;
   margin-left: -35vw;
   width: 40vw;
 }
@@ -747,13 +750,17 @@ nav ul .is-active {
   line-height: 3vw;
 }
 
-.partners .part-logo {
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
+.partners .partners-content .part-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 94vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.partners .part-logo ul {
+.partners .partners-content .part-logo ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,19 +773,19 @@ nav ul .is-active {
       flex-wrap: nowrap;
   margin: 0;
   padding-left: 0;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.partners .part-logo ul .img-list {
+.partners .partners-content .part-logo ul .img-list {
   width: 3vw;
 }
 
-.partners .part-logo ul li {
+.partners .partners-content .part-logo ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,10 +799,10 @@ nav ul .is-active {
   font-size: 1.5vh;
   padding-left: 2vw;
   margin-top: 0 img;
-  margin-top-width: 2vh;
+  margin-top-width: 2vw;
 }
 
-.partners .part-logo ul li p {
+.partners .partners-content .part-logo ul li p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -804,15 +811,15 @@ nav ul .is-active {
   color: #89D360;
 }
 
-.partners .part-logo ul li:nth-child(4) {
+.partners .partners-content .part-logo ul li:nth-child(4) {
   margin-bottom: -0.2vw !important;
 }
 
-.partners .part-logo ul li:nth-child(5) {
+.partners .partners-content .part-logo ul li:nth-child(5) {
   margin-top: -1vh !important;
 }
 
-.partners .part-logo ul li:nth-child(6) {
+.partners .partners-content .part-logo ul li:nth-child(6) {
   margin-bottom: 1vh !important;
 }
 
@@ -826,9 +833,25 @@ nav ul .is-active {
   margin: -1vw +5vw 0 0;
 }
 
+.contacts {
+  display: block;
+}
+
+.contacts h4 {
+  margin: 7vh 0 1vh 0;
+}
+
+.contacts h3 {
+  margin: -1vh 0 5vh 0;
+}
+
+.contact-info {
+  display: block;
+}
+
 .contact-info ul {
   list-style: none;
-  margin: 0;
+  margin-top: -2vh;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1144,7 +1167,7 @@ nav ul .is-active {
     margin: 7vh 0 1vh 0;
   }
   .main-devices h3 {
-    margin: 1vh 0 5vh 0;
+    margin: 1vh 0 4vh 0;
   }
   .features-container {
     display: -webkit-box;

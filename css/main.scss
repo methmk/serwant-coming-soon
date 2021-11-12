@@ -157,6 +157,7 @@ input {
 	width: 178px;
 	height: 40px;
 	padding: 0 !important;
+	margin-left: -1vh;
 }
 
 a:visited {
@@ -261,7 +262,7 @@ nav {
 .tech {
     display: flex;
 	text-align: end;
-	margin-top: 15vh;
+	margin-top: 14vh;
 	display: block;
     width: 45vw;
 	span {
@@ -278,7 +279,7 @@ nav {
 }
 
 .tech-list {
-	
+	margin-top: 1vh;
 	display: flex;
 	align-items: center;
 	width: 45%;
@@ -499,12 +500,11 @@ nav {
 	.glass {
 		top: 0;
 		left: 38%;
-		height: 99vh;
+		height: 100%;
 		width: 45vw;
 		position: absolute;
 		background: linear-gradient(to bottom right, rgba(159, 159, 159, 0.251), rgba(233, 233, 233, 0.1));
 		backdrop-filter: blur(12px);
-		border-top: 1px solid rgba(255, 255, 255, 0.4);
 		border-left: 1px solid rgba(255, 255, 255, 0.4);
 		box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 		z-index: -1;
@@ -521,11 +521,13 @@ nav {
 		display: flex;
 		width: 90vw;
 		flex-direction: row;
+		margin-top: 2vw;
+
        
 
         .serwant-ipad{
-            margin-top:-5%;
-            margin-left:-20%;
+            margin-top:-5vw;
+            margin-left:-17%;
             
             img{
              width: 70vw;
@@ -533,6 +535,7 @@ nav {
             
         }
        .platform-text{
+		   margin-top: -3vh;
         margin-left: -35vw;
         width: 40vw;
 		h2 {
@@ -620,12 +623,11 @@ nav {
 			}
 		}
 	}
-}
 	.part-logo {
 
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
+        display: flex;
+        width: 94vw;
+		justify-content: flex-end;
 		ul {
             
 			list-style: none;
@@ -634,7 +636,7 @@ nav {
 			flex-wrap: nowrap;
 			margin: 0;
 			padding-left: 0;
-			justify-content: flex-end;
+			justify-content: space-between;
 			align-items: center;
 			.img-list {
 				width: 3vw;
@@ -645,8 +647,9 @@ nav {
 				justify-content: center;
 				font-size: 1.5vh;
 				padding-left: 2vw;
-				margin-top: 0 img {
-					width: 2vh;
+				margin-top: 0 
+				img {
+					width: 2vw;
 				}
 				p { 
                     align-items: center;
@@ -666,6 +669,8 @@ nav {
 			}
 		}
 	}
+}
+	
 	.crop {
 		object {
 			width: 70vw;
@@ -679,10 +684,23 @@ nav {
 	}
 }
 
+
+
+.contacts {
+	display: block;
+	h4 {
+		margin: 7vh 0 1vh 0;
+	}
+	h3 {
+		margin: -1vh 0 5vh 0;
+	}
+}
 .contact-info {
+	display: block;
+
     ul {
         list-style: none;
-        margin: 0;
+        margin-top:-2vh;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -1030,11 +1048,10 @@ nav {
 			margin: 7vh 0 1vh 0;
 		}
 		h3 {
-			margin: 1vh 0 5vh 0;
+			margin: 1vh 0 4vh 0;
 		}
 	}
 	
-
 	.features-container {
 		display: flex;
 		flex-direction: column;
